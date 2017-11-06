@@ -1,0 +1,33 @@
+<div>
+    <div class="input-group">
+        <input type="text" [(ngModel)]="input" class="form-control">
+        <span class="input-group-addon" (click)="addToList()">Add to List</span>
+    </div>
+    <div class="selected-ids">
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let id of selectedIds">{{id}}</li>
+        </ul>
+        <div *ngIf="selectedIds.length" class="text-center">
+            <button class="btn btn-success btn-md" (click)="submit()">Submit</button>
+        </div>
+    </div>
+    <div *ngIf="tableContent.length" class="panel panel-default">
+        <div class="panel-heading">Details</div>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Value</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let row of tableContent">
+                    <td>{{row.id}}</td>
+                    <td>{{row.value}}</td>
+                    <td>{{row.name}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<div *ngIf="selectedOption">
+    <select class="form-control" [(ngModel)]="selectedOption">
+        <option *ngFor="let option of options" [ngValue]="option">{{option.name}}</option>
+    </select>
+    <div class="content">
+        <p>{{selectedOption.value}}</p>
+    </div>
+</div>

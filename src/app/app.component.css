@@ -1,0 +1,31 @@
+.welcome-msg {
+    font-size: 2em;
+    font-weight: 500;
+}
+.home-page {
+    margin: 20px;
+}
+.side-nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+
+
+.row {
+    margin: 0;
+}
+
+.tab-content {
+    padding: 15px;
+}
+
+.first-page div{
+    padding: 16px;
+}
+
+.second-page button {
+    text-align: center;
+    margin-top: 20px;
+}
